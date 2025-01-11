@@ -7,6 +7,142 @@
     <title>TailwindCSS</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!-- header -->
+    <header class="py-4 border-b-2 border-b-blue-300">
+      <div class="container mx-auto px-4">
+        <a href="#" class="uppercase font-extrabold text-blue-600 text-3xl">logo</a>
+        <nav class="">
+          <ul class="mb-5 text-gray-900 font-semibold">
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1.5 px-2 hover:underline underline-offset-2 decoration-2 decoration-blue-600"
+              >
+                Главная
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1.5 px-2 hover:underline underline-offset-2 decoration-2 decoration-blue-600"
+              >
+                Услуги
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1.5 px-2 hover:underline underline-offset-2 decoration-2 decoration-blue-600"
+              >
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="flex gap-2">
+            <li>
+              <button
+                class="py-1 px-3 border-2 rounded-sm border-blue-600 bg-blue-600 text-white hover:text-blue-600 hover:bg-transparent shadow-sm shadow-blue-400 hover:shadow-none"
+              >
+                Войти
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-3 border-2 rounded-sm border-blue-600 text-blue-600 hover:text-white hover:bg-blue-600 shadow-sm shadow-blue-400 hover:shadow-none"
+              >
+                Регистрация
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- bredcrumbs -->
+      <section class="py-6">
+        <div class="container mx-auto px-4">
+          <div class="flex text-gray-400 overflow-y-auto whitespace-nowrap">
+            <a href="#" class="hover:text-gray-600">Главная</a>
+            <span class="px-2.5">&gt;</span>
+            <a href="#" class="hover:text-gray-600">Услуги</a>
+            <span class="px-2.5">&gt;</span>
+            <a>Маркетинг</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe -->
+      <section class="py-8">
+        <div class="container mx-auto px-4">
+          <h5 class="mb-2 text-blue-600 font-bold text-lg uppercase text-center">Подпишись!</h5>
+          <p class="mb-8 text-gray-500 text-center">Будь вкурсе всех новинок и акций</p>
+          <form class="flex flex-col max-w-sm mx-auto">
+            <input type="email" placeholder="Ваш email" class="text-gray-800 p-2 w-full border rounded-t-md" required />
+            <button class="p-2 bg-blue-600 text-white rounded-b-md w-full">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-4 bg-blue-950">
+      <div class="container mx-auto px-4 py-4">
+        <!-- footer-col -->
+        <div class="mb-6">
+          <h6 class="mb-3 uppercase font-semibold text-white">О компании</h6>
+          <ul class="grid gap-1.5 text-gray-300">
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Команда</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Работы</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Вакансии</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- footer-col -->
+        <div>
+          <h6 class="mb-3 uppercase font-semibold text-white">Услуги</h6>
+          <ul class="grid gap-1.5 text-gray-300">
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Маркетинг</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Дизайн</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-block py-1 hover:text-white hover:underline underline-offset-2 decoration-2 decoration-red-600"
+                >Разработка</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
